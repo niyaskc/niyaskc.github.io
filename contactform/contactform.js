@@ -93,7 +93,7 @@ jQuery(document).ready(function($) {
 	{
 		//var str = $(this).serialize();
 		var str = $(this).serializeArray();
-		window.location = 'mailto:' + 'classichealthcare007@gmail.com' + '?subject=' + str[2] + '&body=' + 'Name : ' + str[0] + "\n"+'Email: '+str[1]+"\n" +'Message: \n\n'+ str[3];
+		window.location = 'mailto:' + 'classichealthcare007@gmail.com' + '?subject=' + str[2].toString() + '&body=' + 'Name : ' + str[0].toString() + "\n"+'Email: '+str[1].toString()+"\n" +'Message: \n\n'+ str[3].toString();
 		
 	}
 	return false;	
